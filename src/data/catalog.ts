@@ -1,0 +1,122 @@
+export const CATALOG_ITEMS = [
+  {
+    id: 1,
+    name: "Portátil Corporativo",
+    description: "Equipos portátiles de alto rendimiento para productividad en la empresa.",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 2,
+    name: "Cámara Hikvision",
+    description: "Seguridad confiable en formato domo o bala con monitoreo remoto.",
+    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 3,
+    name: "Cámara Wi-Fi Inteligente",
+    description: "Cámaras inalámbricas para supervisión rápida sin cableado complejo.",
+    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 4,
+    name: "Teclado Ergonómico",
+    description: "Teclados diseñados para el confort durante largas jornadas laborales.",
+    image: "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 5,
+    name: "Mouse Inalámbrico",
+    description: "Precisión y comodidad sin cables para estaciones de trabajo.",
+    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 6,
+    name: "Monitor / Pantalla",
+    description: "Pantallas de alta resolución para centros de control y oficinas.",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 7,
+    name: "Tóner de Impresión",
+    description: "Suministros originales y genéricos de alto rendimiento para sus impresoras.",
+    image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eae6?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 8,
+    name: "Impresora Multifuncional",
+    description: "Equipos de impresión, copiado y escaneo para entornos corporativos.",
+    image: "https://images.unsplash.com/photo-1565022536102-f7645c84354a?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 9,
+    name: "Disco Duro Externo",
+    description: "Almacenamiento portátil masivo para copias de seguridad de datos críticos.",
+    image: "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 10,
+    name: "Unidad de Estado Sólido (SSD)",
+    description: "Velocidad extrema para actualizar y revivir equipos de cómputo lentos.",
+    image: "https://images.unsplash.com/photo-1606404313264-b040be220f86?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 11,
+    name: "Memoria RAM",
+    description: "Ampliaciones de memoria para mejorar las capacidades multitarea.",
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 12,
+    name: "Router Empresarial",
+    description: "Gestión de red profesional y Wi-Fi de largo alcance y estabilidad.",
+    image: "https://images.unsplash.com/photo-1544122177-84e1b858e65e?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 13,
+    name: "Switch de Red corporativa",
+    description: "Distribución de datos eficiente para toda su infraestructura cableada.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 14,
+    name: "Control de Acceso Biométrico",
+    description: "Sistemas de asistencia y acceso con tecnología de huella o facial.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 15,
+    name: "Cableado Estructurado",
+    description: "Implementación de redes bajo estándares internacionales e insumos.",
+    image: "https://images.unsplash.com/photo-1515524738708-327f6b0037a7?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 16,
+    name: "Sistema de Alarma Integral",
+    description: "Paneles de intrusión y sensores de movimiento de alta precisión.",
+    image: "https://images.unsplash.com/photo-1548625361-ec85d562f741?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 17,
+    name: "Respaldo Energético (UPS)",
+    description: "Protección contra picos de voltaje y cortes de energía imprevistos.",
+    image: "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 18,
+    name: "Servidor de Datos",
+    description: "Equipos centrales para servicios y bases de datos con alta disponibilidad.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 19,
+    name: "Diadema para Call Center",
+    description: "Audífonos de grado corporativo con cancelación de ruido ambiental.",
+    image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: 20,
+    name: "Licencias Antivirus Corporativo",
+    description: "Protección Endpoint empresarial contra malware, ransomware y amenazas.",
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+  }
+];
