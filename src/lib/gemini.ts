@@ -1,7 +1,17 @@
 import { GoogleGenAI } from '@google/genai';
 
-// Initialize the Gemini client using the environment variable injected by Vite
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+let genAI: GoogleGenAI | null = null;
+
+function getAIClient() {
+  if (!genAI) {
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error('GEMINI_API_KEY is not set');
+    }
+    genAI = new GoogleGenAI({ apiKey });
+  }
+  return genAI;
+}
 
 const SYSTEM_PROMPT = `
 Eres el asistente virtual con IA de "J3 Security", una empresa colombiana experta ubicada en Medellín.
@@ -25,8 +35,9 @@ Reglas:
 
 export async function chatWithAssistant(history: { role: 'user' | 'model', parts: { text: string }[] }[], currentMessage: string) {
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+    const client = getAIClient();
+    const response = await client.models.generateContent({
+      model: 'gemini-2.0-flash',
       contents: [
         { role: 'user', parts: [{ text: SYSTEM_PROMPT }] },
         { role: 'model', parts: [{ text: 'Entendido, actuaré como el asistente virtual de J3 Security. ¿En qué le puedo ayudar hoy?' }] },
