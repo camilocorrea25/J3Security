@@ -4,9 +4,11 @@ let genAI: GoogleGenAI | null = null;
 
 function getAIClient() {
   if (!genAI) {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) {
-      throw new Error('GEMINI_API_KEY is not set');
+    // Intentar obtener de variables de entorno, si no, usar la clave proporcionada directamente
+    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyAhXSXLMVzs56NAwX6REeJsI62_QW_OvAg";
+    
+    if (!apiKey || apiKey === "") {
+      throw new Error('API Key no encontrada para el asistente.');
     }
     genAI = new GoogleGenAI({ apiKey });
   }
