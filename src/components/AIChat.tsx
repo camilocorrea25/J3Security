@@ -168,6 +168,15 @@ export default function AIChat() {
                   <Send className="w-4 h-4 ml-1" />
                 </button>
               </form>
+              <div className="mt-2 flex justify-center">
+                <a 
+                  href="/#voice-call" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-2 text-[10px] text-blue-400 hover:text-[#00FF9D] transition-colors font-bold uppercase tracking-widest"
+                >
+                  <Mic className="w-3 h-3" /> Hablar con Don Seguro (Voz)
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

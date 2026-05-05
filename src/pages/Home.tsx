@@ -1,11 +1,13 @@
 import { ArrowRight, ShieldAlert, Video, Wrench, Package, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import DonSeguroVoice from '../components/DonSeguroVoice';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section (Immersive Design) */}
       <section className="relative w-full min-h-[calc(100vh-64px)] grid grid-cols-1 lg:grid-cols-12 border-b border-blue-500/20 z-10">
+        {/* ... (rest of the Hero Section remains the same) ... */}
         {/* Left Pane: Primary Service (Cybersecurity) */}
         <div className="col-span-1 lg:col-span-7 p-8 lg:p-12 xl:p-16 flex flex-col justify-center bg-transparent relative">
           <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm -z-10 bg-gradient-to-r from-[#050B14] to-transparent"></div>
@@ -54,10 +56,10 @@ export default function Home() {
           
           <div className="flex items-center gap-4 flex-col sm:flex-row w-full sm:w-auto">
             <a 
-              href="#services"
+              href="#voice-call"
               className="w-full sm:w-auto px-6 py-3 rounded bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-tighter shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all flex items-center justify-center gap-2"
             >
-              Explorar Soluciones
+              Hablar con Don Seguro
             </a>
             <Link 
               to="/catalogo"
@@ -98,6 +100,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Don Seguro Voice Section */}
+      <div id="voice-call">
+        <DonSeguroVoice />
+      </div>
 
       {/* Services Section */}
       <section id="services" className="py-24 bg-slate-950 relative">
